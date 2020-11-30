@@ -33,6 +33,7 @@
     <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.2.3" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RichText.Module.Blazor\RichText.Module.Blazor.csproj" />
     <ProjectReference Include="..\Solution1.Module.Blazor\Solution1.Module.Blazor.csproj">
       <Private>True</Private>
     </ProjectReference>

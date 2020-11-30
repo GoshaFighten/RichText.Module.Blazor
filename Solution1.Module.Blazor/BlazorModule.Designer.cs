@@ -29,6 +29,7 @@
             this.RequiredModuleTypes.Add(typeof(Solution1.Module.Solution1Module));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Blazor.SystemModule.SystemBlazorModule));
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.Blazor.ValidationBlazorModule));
+            this.RequiredModuleTypes.Add(typeof(RichText.Module.Blazor.RichTextBlazorModule));
         }
 
         #endregion

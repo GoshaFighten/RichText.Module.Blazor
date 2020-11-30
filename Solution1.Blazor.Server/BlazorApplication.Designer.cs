@@ -31,6 +31,7 @@
             this.conditionalAppearanceModule = new DevExpress.ExpressApp.ConditionalAppearance.ConditionalAppearanceModule();
             this.validationModule = new DevExpress.ExpressApp.Validation.ValidationModule();
             this.validationBlazorModule = new DevExpress.ExpressApp.Validation.Blazor.ValidationBlazorModule();
+            this.richTextBlazorModule = new RichText.Module.Blazor.RichTextBlazorModule();
 
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
 
@@ -47,6 +48,7 @@
             this.Modules.Add(this.conditionalAppearanceModule);
             this.Modules.Add(this.validationModule);
             this.Modules.Add(this.validationBlazorModule);
+            this.Modules.Add(this.richTextBlazorModule);
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.Solution1BlazorApplication_DatabaseVersionMismatch);
 
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -63,5 +65,6 @@
         private DevExpress.ExpressApp.ConditionalAppearance.ConditionalAppearanceModule conditionalAppearanceModule;
         private DevExpress.ExpressApp.Validation.ValidationModule validationModule;
         private DevExpress.ExpressApp.Validation.Blazor.ValidationBlazorModule validationBlazorModule;
+        private RichText.Module.Blazor.RichTextBlazorModule richTextBlazorModule;
     }
 }

@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Module.Blazor", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Blazor.Server", "Solution1.Blazor.Server\Solution1.Blazor.Server.csproj", "{915C3436-46EA-475A-A33B-02FD22326CA8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichText.Module.Blazor", "RichText.Module.Blazor\RichText.Module.Blazor.csproj", "{BB4EC436-C6F7-407B-9310-11A86935719E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,12 @@ Global
 		{915C3436-46EA-475A-A33B-02FD22326CA8}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
 		{915C3436-46EA-475A-A33B-02FD22326CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{915C3436-46EA-475A-A33B-02FD22326CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4EC436-C6F7-407B-9310-11A86935719E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4EC436-C6F7-407B-9310-11A86935719E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4EC436-C6F7-407B-9310-11A86935719E}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{BB4EC436-C6F7-407B-9310-11A86935719E}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{BB4EC436-C6F7-407B-9310-11A86935719E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4EC436-C6F7-407B-9310-11A86935719E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
