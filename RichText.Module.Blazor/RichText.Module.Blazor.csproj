@@ -25,5 +25,6 @@
   <ItemGroup>
     <PackageReference Include="DevExpress.ExpressApp" Version="20.2.3" />
     <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="20.2.3" />
+    <PackageReference Include="DevExpress.ExpressApp.Office" Version="20.2.3" />
   </ItemGroup>
 </Project>
