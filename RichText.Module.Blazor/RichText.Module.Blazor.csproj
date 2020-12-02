@@ -26,5 +26,6 @@
     <PackageReference Include="DevExpress.ExpressApp" Version="20.2.3" />
     <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="20.2.3" />
     <PackageReference Include="DevExpress.ExpressApp.Office" Version="20.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
   </ItemGroup>
 </Project>

@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Solution1.Blazor.Server.Services;
+using RichText.Module.Blazor.Extensions;
 
 namespace Solution1.Blazor.Server {
     public class Startup {
@@ -32,6 +33,7 @@ namespace Solution1.Blazor.Server {
             services.AddSingleton<XpoDataStoreProviderAccessor>();
             services.AddScoped<CircuitHandler, CircuitHandlerProxy>();
             services.AddXaf<Solution1BlazorApplication>(Configuration);
+            services.AddRichTextBlazorModule();
             services.AddXafSecurity(options => {
                 options.RoleType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole);
                 options.UserType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser);
