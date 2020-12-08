@@ -41,3 +41,9 @@ msbuild.wrn
 
 # Node Modules
 node_modules/
+
+# RichEdit
+
+RichText.Module.Blazor/wwwroot/dx.richedit.min.js
+RichText.Module.Blazor/wwwroot/dx.richedit.css
+RichText.Module.Blazor/wwwroot/icons/
