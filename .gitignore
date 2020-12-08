@@ -38,3 +38,6 @@ msbuild.wrn
 
 # Code Rush
 .cr/
+
+# Node Modules
+node_modules/
