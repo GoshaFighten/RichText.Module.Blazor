@@ -15,11 +15,11 @@ namespace RichText.Module.Blazor.Components {
         }
         protected async Task InitClientSideAsync(bool firstRender) {
             if (firstRender) {
-                await InvokeJsAsync("RichTextEditorComponent.Init", DotNetObjectReference.Create(this));
+                await InvokeJsAsync("RichTextEditorComponent.Init", GetId(), ComponentModel.ReadOnly, ComponentModel.Value, DotNetObjectReference.Create(this));
             }
         }
         protected async Task ClientDisposeAsync() {
-            await InvokeJsAsync("RichTextEditorComponent.Dispose");
+            await InvokeJsAsync("RichTextEditorComponent.Dispose", GetId());
         }
     }
 }
