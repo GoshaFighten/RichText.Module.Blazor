@@ -17,6 +17,8 @@ namespace RichText.Module.Blazor.Components {
         protected async Task InitClientSideAsync(bool firstRender) {
             if (firstRender) {
                 await InvokeJsAsync("RichTextEditorComponent.Init", GetId(), ComponentModel.ReadOnly, ComponentModel.Value, DotNetObjectReference.Create(this));
+            } else {
+                await InvokeJsAsync("RichTextEditorComponent.OpenDocument", GetId(), ComponentModel.Value);
             }
         }
         protected async Task ClientDisposeAsync() {

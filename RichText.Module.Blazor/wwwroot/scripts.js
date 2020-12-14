@@ -31,5 +31,14 @@
             }
             delete window.RichTextEditorComponent._riches[id];
         }
+    },
+    OpenDocument: function (id, documentAsBase64) {
+        if (window.RichTextEditorComponent._riches[id]) {
+            window.RichTextEditorComponent._riches[id].richEdit.openDocument(
+                documentAsBase64,
+                'DocumentName',
+                DevExpress.RichEdit.DocumentFormat.OpenXml
+            );
+        }
     }
 }
