@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.JSInterop;
+using System.Runtime.CompilerServices;
 
 namespace RichText.Module.Blazor.Components {
     public partial class RichTextEditorComponentBase : ComponentBase {
@@ -20,6 +21,11 @@ namespace RichText.Module.Blazor.Components {
         }
         protected async Task ClientDisposeAsync() {
             await InvokeJsAsync("RichTextEditorComponent.Dispose", GetId());
+        }
+        [JSInvokable]
+        public Task SaveDocument(string document) {
+            ComponentModel.SetValueFromUI(document);
+            return Task.CompletedTask;
         }
     }
 }

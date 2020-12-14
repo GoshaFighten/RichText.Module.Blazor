@@ -14,7 +14,7 @@ namespace RichText.Module.Blazor.Components {
         }
         [Parameter]
         public RichTextEditorComponentModel ComponentModel { get; set; }
-        public static RenderFragment Create(RichTextEditorComponentModel componentModel) => builder => {
+        public static RenderFragment Create(RichTextEditorComponentModel componentModel) => builder => {           
             builder.OpenComponent<RichTextEditorComponent>(0);
             builder.AddAttribute(1, nameof(ComponentModel), componentModel);
             builder.CloseComponent();

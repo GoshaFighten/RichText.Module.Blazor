@@ -7,11 +7,11 @@
         options.width = '100%';
         options.height = '900px';
         options.events.saving = function (s, e) {
-            //e.handled = true;
-            //dotnetHelper.invokeMethodAsync('SaveDocumentCaller', e.base64);
+            e.handled = true;
+            dotnetHelper.invokeMethodAsync('SaveDocument', e.base64);
         };
         options.events.documentChanged = function (s, e) {
-            //s.saveDocument(DevExpress.RichEdit.DocumentFormat.OpenXml);
+            s.saveDocument(DevExpress.RichEdit.DocumentFormat.OpenXml);
         };
         var richElement = document.getElementById(id);
         const richEdit = DevExpress.RichEdit.create(richElement, options);
