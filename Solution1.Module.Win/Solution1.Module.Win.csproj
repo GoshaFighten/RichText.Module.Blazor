@@ -12,14 +12,14 @@
     <Configurations>Debug;Release;EasyTest</Configurations>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp.Win" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Office.Win" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.Base" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.BaseImpl" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Security.Xpo" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Validation.Win" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Xpo" Version="20.2.3-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp.Win" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Office.Win" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.Base" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.BaseImpl" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Security.Xpo" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Validation.Win" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Xpo" Version="20.2.4-ctp" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Model.DesignedDiffs.xafml" />

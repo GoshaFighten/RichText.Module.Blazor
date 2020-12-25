@@ -25,15 +25,15 @@
     <EmbeddedResource Include="Images\Logo.svg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.WindowsDesktop.RichEdit.Export" Version="20.2.3" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp.Win" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Office.Win" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.Base" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.BaseImpl" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Security.Xpo" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Validation.Win" Version="20.2.3-ctp" />
-    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Xpo" Version="20.2.3-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.RichEdit.Export" Version="20.2.4" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.ExpressApp.Win" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Office.Win" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.Base" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Persistent.BaseImpl" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Security.Xpo" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Validation.Win" Version="20.2.4-ctp" />
+    <PackageReference Include="DevExpress.WindowsDesktop.XAF.Xpo" Version="20.2.4-ctp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Solution1.Module.Win\Solution1.Module.Win.csproj">
