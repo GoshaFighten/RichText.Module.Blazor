@@ -20,10 +20,10 @@ namespace RichText.Module.Blazor.Editors.Adapters {
             ComponentModel.ReadOnly = !allowEdit;
         }
         public override object GetValue() {
-            return Convert.FromBase64String(ComponentModel.Value);
+            return ComponentModel.Value is null ? null : Convert.FromBase64String(ComponentModel.Value);
         }
         public override void SetValue(object value) {
-            ComponentModel.Value = Convert.ToBase64String((byte[])value);
+            ComponentModel.Value = value is null ? null : Convert.ToBase64String((byte[])value);
         }
         protected override RenderFragment CreateComponent() {
             return ComponentModelObserver.Create(ComponentModel, RichTextEditorComponent.Create(ComponentModel));
