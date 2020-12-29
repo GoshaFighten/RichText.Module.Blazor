@@ -1,0 +1,4 @@
+1. Download this example.
+2. Add the *RichText.Module.Blazor.csproj* to your exsing Blazor Module.
+3. Add `RichText.Module.Blazor.RichTextBlazorModule` to [the `RequiredModuleTypes` collection](https://github.com/GoshaFighten/RichText.Module.Blazor/blob/main/Solution1.Module.Blazor/BlazorModule.Designer.cs#L32) in your Blazoe Module.
+4. Add the [StartupExtensions.AddRichTextBlazorModule](https://github.com/GoshaFighten/RichText.Module.Blazor/blob/6e4863fc6b03232593f09440cf033c52de19358c/RichText.Module.Blazor/Extensions/StartupExtensions.cs#L10) line to the [Startup.ConfigureServices](https://github.com/GoshaFighten/RichText.Module.Blazor/blob/main/Solution1.Blazor.Server/Startup.cs#L36) method.
