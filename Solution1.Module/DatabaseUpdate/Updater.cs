@@ -11,6 +11,9 @@ using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
+using Solution1.Module.BusinessObjects;
+using System.IO;
+using System.Reflection;
 
 namespace Solution1.Module.DatabaseUpdate {
     // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Updating.ModuleUpdater
@@ -20,13 +23,26 @@ namespace Solution1.Module.DatabaseUpdate {
         }
         public override void UpdateDatabaseAfterUpdateSchema() {
             base.UpdateDatabaseAfterUpdateSchema();
-            //string name = "MyName";
-            //DomainObject1 theObject = ObjectSpace.FindObject<DomainObject1>(CriteriaOperator.Parse("Name=?", name));
-            //if(theObject == null) {
-            //    theObject = ObjectSpace.CreateObject<DomainObject1>();
-            //    theObject.Name = name;
-            //}
+            string documentName = "Demo Document";
+            Document richText = ObjectSpace.FindObject<Document>(CriteriaOperator.Parse("Subject = ?", documentName));
+            if (richText == null) {
+                richText = ObjectSpace.CreateObject<Document>();
+                richText.Subject = documentName;
+                byte[] document = GetDemoDocument("DemoDocument");
+                richText.Text = document;
+            }
             ObjectSpace.CommitChanges(); //This line persists created object(s).
+        }
+        private byte[] GetDemoDocument(string name) {
+            var assembly = Assembly.GetExecutingAssembly();
+            var resourceNames = assembly.GetManifestResourceNames();
+            var resourceName = resourceNames.FirstOrDefault(p => p.Contains(name));
+            byte[] buffer = null;
+            using (Stream stream = assembly.GetManifestResourceStream(resourceName)) {
+                buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, (int)stream.Length);
+            }
+            return buffer;
         }
         public override void UpdateDatabaseBeforeUpdateSchema() {
             base.UpdateDatabaseBeforeUpdateSchema();

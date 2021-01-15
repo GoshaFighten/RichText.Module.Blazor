@@ -1,4 +1,5 @@
-﻿using DevExpress.ExpressApp.Editors;
+﻿using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp.Editors;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
@@ -8,6 +9,7 @@ using System.Text;
 
 namespace Solution1.Module.BusinessObjects {
     [DefaultClassOptions]
+    [XafDefaultProperty(nameof(Subject))]
     public class Document : BaseObject {
         public Document(Session session) : base(session) { }
 

@@ -16,9 +16,11 @@
     <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Data\DemoDocument.docx" />
     <None Remove="Model.DesignedDiffs.xafml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Data\DemoDocument.docx" />
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
   </ItemGroup>
   <ItemGroup>
