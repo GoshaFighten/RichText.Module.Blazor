@@ -34,9 +34,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RichText.Module.Blazor\RichText.Module.Blazor.csproj" />
-    <ProjectReference Include="..\Solution1.Module.Blazor\Solution1.Module.Blazor.csproj">
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\Solution1.Module\Solution1.Module.csproj">
       <Private>True</Private>
     </ProjectReference>

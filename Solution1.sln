@@ -5,12 +5,6 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Module", "Solution1.Module\Solution1.Module.csproj", "{2772DBDE-26B9-48B4-9228-7B3A317ABBF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Module.Win", "Solution1.Module.Win\Solution1.Module.Win.csproj", "{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Win", "Solution1.Win\Solution1.Win.csproj", "{E751C635-4111-4E76-B9C3-AA648CD4C6A1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Module.Blazor", "Solution1.Module.Blazor\Solution1.Module.Blazor.csproj", "{E0435B23-2DBA-452A-94A9-9A16663FC7DF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution1.Blazor.Server", "Solution1.Blazor.Server\Solution1.Blazor.Server.csproj", "{915C3436-46EA-475A-A33B-02FD22326CA8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichText.Module.Blazor", "RichText.Module.Blazor\RichText.Module.Blazor.csproj", "{BB4EC436-C6F7-407B-9310-11A86935719E}"
@@ -28,24 +22,6 @@ Global
 		{2772DBDE-26B9-48B4-9228-7B3A317ABBF3}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
 		{2772DBDE-26B9-48B4-9228-7B3A317ABBF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2772DBDE-26B9-48B4-9228-7B3A317ABBF3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
-		{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
-		{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66C41ED7-2AAF-4856-9D4A-7913550F3C6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E751C635-4111-4E76-B9C3-AA648CD4C6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E751C635-4111-4E76-B9C3-AA648CD4C6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E751C635-4111-4E76-B9C3-AA648CD4C6A1}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
-		{E751C635-4111-4E76-B9C3-AA648CD4C6A1}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
-		{E751C635-4111-4E76-B9C3-AA648CD4C6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E751C635-4111-4E76-B9C3-AA648CD4C6A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0435B23-2DBA-452A-94A9-9A16663FC7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0435B23-2DBA-452A-94A9-9A16663FC7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0435B23-2DBA-452A-94A9-9A16663FC7DF}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
-		{E0435B23-2DBA-452A-94A9-9A16663FC7DF}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
-		{E0435B23-2DBA-452A-94A9-9A16663FC7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0435B23-2DBA-452A-94A9-9A16663FC7DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{915C3436-46EA-475A-A33B-02FD22326CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{915C3436-46EA-475A-A33B-02FD22326CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{915C3436-46EA-475A-A33B-02FD22326CA8}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
