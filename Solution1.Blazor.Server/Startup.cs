@@ -28,9 +28,10 @@ namespace Solution1.Blazor.Server {
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services) {
             services.AddRazorPages();
-            services.AddServerSideBlazor().AddHubOptions(opt => {
-                opt.MaximumReceiveMessageSize = null;
-            });
+            services.AddServerSideBlazor()
+                .AddHubOptions(opt => {
+                    opt.MaximumReceiveMessageSize = null;
+                });
             services.AddHttpContextAccessor();
             services.AddSingleton<XpoDataStoreProviderAccessor>();
             services.AddScoped<CircuitHandler, CircuitHandlerProxy>();
@@ -40,10 +41,9 @@ namespace Solution1.Blazor.Server {
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
-            if(env.IsDevelopment()) {
+            if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
-            }
-            else {
+            } else {
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
