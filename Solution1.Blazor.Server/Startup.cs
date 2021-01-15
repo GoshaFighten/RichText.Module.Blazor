@@ -34,18 +34,6 @@ namespace Solution1.Blazor.Server {
             services.AddScoped<CircuitHandler, CircuitHandlerProxy>();
             services.AddXaf<Solution1BlazorApplication>(Configuration);
             services.AddRichTextBlazorModule();
-            services.AddXafSecurity(options => {
-                options.RoleType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole);
-                options.UserType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser);
-                options.Events.OnSecurityStrategyCreated = securityStrategy => ((SecurityStrategy)securityStrategy).RegisterXPOAdapterProviders();
-                options.SupportNavigationPermissionsForTypes = false;
-            }).AddExternalAuthentication<HttpContextPrincipalProvider>()
-            .AddAuthenticationStandard(options => {
-                options.IsSupportChangePassword = true;
-            });
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options => {
-                options.LoginPath = "/LoginPage";
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -21,6 +21,7 @@ namespace Solution1.Module.BusinessObjects {
             set => SetPropertyValue(nameof(Subject), ref subject, value);
         }
         [EditorAlias(EditorAliases.RichTextPropertyEditor)]
+        [Size(SizeAttribute.Unlimited)]
         public byte[] Text {
             get => text;
             set => SetPropertyValue(nameof(Text), ref text, value);

@@ -26,10 +26,6 @@
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Blazor.SystemModule.SystemBlazorModule();
             this.module3 = new Solution1.Module.Solution1Module();
-            this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
-            this.conditionalAppearanceModule = new DevExpress.ExpressApp.ConditionalAppearance.ConditionalAppearanceModule();
-            this.validationModule = new DevExpress.ExpressApp.Validation.ValidationModule();
-            this.validationBlazorModule = new DevExpress.ExpressApp.Validation.Blazor.ValidationBlazorModule();
             this.richTextBlazorModule = new RichText.Module.Blazor.RichTextBlazorModule();
 
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -42,10 +38,6 @@
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);
             this.Modules.Add(this.module3);
-            this.Modules.Add(this.securityModule1);
-            this.Modules.Add(this.conditionalAppearanceModule);
-            this.Modules.Add(this.validationModule);
-            this.Modules.Add(this.validationBlazorModule);
             this.Modules.Add(this.richTextBlazorModule);
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.Solution1BlazorApplication_DatabaseVersionMismatch);
 
@@ -58,10 +50,6 @@
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Blazor.SystemModule.SystemBlazorModule module2;
         private Solution1.Module.Solution1Module module3;
-        private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
-        private DevExpress.ExpressApp.ConditionalAppearance.ConditionalAppearanceModule conditionalAppearanceModule;
-        private DevExpress.ExpressApp.Validation.ValidationModule validationModule;
-        private DevExpress.ExpressApp.Validation.Blazor.ValidationBlazorModule validationBlazorModule;
         private RichText.Module.Blazor.RichTextBlazorModule richTextBlazorModule;
     }
 }
