@@ -26,7 +26,6 @@
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Blazor.SystemModule.SystemBlazorModule();
             this.module3 = new Solution1.Module.Solution1Module();
-            this.richTextBlazorModule = new RichText.Module.Blazor.RichTextBlazorModule();
 
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
 
@@ -38,7 +37,6 @@
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);
             this.Modules.Add(this.module3);
-            this.Modules.Add(this.richTextBlazorModule);
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.Solution1BlazorApplication_DatabaseVersionMismatch);
 
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -50,6 +48,5 @@
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Blazor.SystemModule.SystemBlazorModule module2;
         private Solution1.Module.Solution1Module module3;
-        private RichText.Module.Blazor.RichTextBlazorModule richTextBlazorModule;
     }
 }

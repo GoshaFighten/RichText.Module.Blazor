@@ -13,6 +13,7 @@ namespace Solution1.Blazor.Server {
     public partial class Solution1BlazorApplication : BlazorApplication {
         public Solution1BlazorApplication() {
             InitializeComponent();
+            this.Modules.Add(new RichText.Module.Blazor.RichTextBlazorModule());
         }
         protected override void OnSetupStarted() {
             base.OnSetupStarted();
