@@ -10,10 +10,14 @@
             e.handled = true;
             dotnetHelper.invokeMethodAsync('SaveDocument', e.base64);
         };
-        options.events.documentChanged = function (s, e) {
+        const documentChangedHandler = function (s, e) {
             s.saveDocument(DevExpress.RichEdit.DocumentFormat.OpenXml);
         };
-        var richElement = document.getElementById(id);
+        options.events.documentFormatted = function (s, e) {
+            s.events.documentChanged.removeHandler(documentChangedHandler);
+            s.events.documentChanged.addHandler(documentChangedHandler);
+        };
+        const richElement = document.getElementById(id);
         const richEdit = DevExpress.RichEdit.create(richElement, options);
         window.RichTextEditorComponent._riches[id] = { richEdit, dotnetHelper };
         if (documentAsBase64) {
